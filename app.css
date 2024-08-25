@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+body {
+  background: #f9f9f9;
+}
+.navbar-brand > img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.navbar-brand > img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+.vertical-hr {
+  height: 40px; /* Sesuaikan tinggi garis */
+  width: 1px;
+  background-color: #cac8c8; /* Warna garis */
+  margin-left: 15px; /* Jarak antara logo dan garis */
+  margin-right: 15px; /* Jarak antara garis dan menu navigasi */
+}
+.nav-link:hover {
+  color: #1a4870 !important;
+  font-weight: 800;
+}
+a > .btn {
+  border: 2px solid #5b99c2;
+  background: transparent;
+  vertical-align: middle;
+  color: #5b99c2;
+}
+a > .btn:hover {
+  background-color: transparent;
+  color: #5b99c2;
+}
+button > .material-symbols-outlined {
+  padding-right: 10px;
+  color: #5b99c2;
+  vertical-align: middle;
+  /* font-size: 1.2rem; */
+}
+
+#home {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/wp11012453-santiago-bernabeu-2022-wallpapers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 95vh;
+  color: white;
+}
+
+#heading-home {
+  width: 300px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  padding-right: 20px;
+  background: #973131;
+  box-shadow: 3px 3px 12px black;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#heading-home > h1 {
+  font-weight: 200;
+  font-size: 4rem;
+  color: white;
+}
+#heading-home > .content-header {
+  font-size: 1.5rem;
+  color: #cdcdcd;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 5px;
+  padding-bottom: 40px;
+}
+#heading-home .content-ticket {
+  font-size: 1.2rem;
+  color: white;
+  text-transform: none;
+  line-height: 15px;
+}
+.discount {
+  font-weight: 200 !important;
+  font-size: 1rem !important;
+}
+#heading-home p > span {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: 600;
+}
+#heading-home > .btn.btn-primary {
+  font-weight: 600;
+  box-shadow: 3px 3px 5px #444;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#desc-home {
+  width: 300px;
+  font-weight: 400;
+}
+#history-heading {
+  padding-right: 20px;
+  width: 600px;
+  margin: 1rem 1rem 1rem 8rem;
+}
+#history-heading > h1 {
+  font-size: 4rem;
+  color: #1a4870;
+}
+#history-content > p {
+  font-size: 2rem;
+  line-height: 28px;
+}
+.ordered > .ordered-list {
+  font-size: 1.5rem;
+}
+.unordered > .unordered-list {
+  font-size: 1.2rem;
+  color: #1a4870;
+}
+.carousel-inner {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+.carousel-caption {
+  z-index: 2;
+}
+.carousel-caption > h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.carousel-caption > p {
+  font-weight: 100;
+}
+
+.col-lg-12 > h1 {
+  padding-right: 20px;
+  width: 600px;
+  margin: 1rem 1rem 1rem 8rem;
+  font-size: 4rem;
+  color: #1a4870;
+}
+.card-info {
+  display: flex;
+  justify-content: flex-start;
+}
+.card-info > h1 {
+  font-weight: 800;
+  font-size: 6rem;
+  color: #1a4870;
+}
+.card-info > img {
+  margin-top: 20px;
+}
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.flex-row > .col-md-12 {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+#trophy {
+  overflow-x: hidden;
+}
+
+@media (max-width: 992px) {
+  #history-heading {
+    margin-left: 0 !important;
+  }
+  #history-heading > h1 {
+    font-size: 2rem;
+  }
+  #history-content > p {
+    font-size: 1.5rem;
+  }
+  #history-content > .ordered > .ordered-list {
+    font-size: 1.2rem;
+  }
+  .col-lg-12 > h1 {
+    margin-left: 0 !important;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .flex-row > .col-md-12 {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
